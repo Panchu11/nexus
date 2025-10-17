@@ -45,7 +45,6 @@ export default function TeamOrb({ member, index }: TeamOrbProps) {
       transition: {
         duration: 6 + index * 0.5,
         repeat: Infinity,
-        ease: "easeInOut",
       },
     },
   };

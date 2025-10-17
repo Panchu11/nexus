@@ -97,7 +97,7 @@ export default function LeaderboardPage() {
               <motion.div
                 className="inline-block"
                 animate={{ rotate: 360 }}
-                transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
+                transition={{ duration: 2, repeat: Infinity }}
               >
                 <div className="w-12 h-12 border-4 border-cyan-500/30 border-t-cyan-400 rounded-full" />
               </motion.div>
