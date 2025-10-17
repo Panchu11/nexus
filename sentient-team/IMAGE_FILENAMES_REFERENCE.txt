@@ -1,0 +1,175 @@
+================================================================================
+🖼️  IMAGE FILENAMES REFERENCE - COPY & PASTE
+================================================================================
+
+LOGO
+================================================================================
+Location: sentient-team/public/
+Filename: logo.png
+Size: 500x500px
+Format: PNG or SVG
+Appears: Top of hero section
+
+
+TEAM MEMBER PHOTOS
+================================================================================
+Location: sentient-team/public/team/
+Size: 500x500px each
+Format: JPG or PNG
+Appears: Inside circular orbs
+
+
+EXACT FILENAMES TO USE (Copy these exactly)
+================================================================================
+
+1. sandeep.jpg
+   Team Member: Sandeep Nailwal
+   Title: Co-founder, Sentient
+   X: @sandeepnailwal
+
+2. himanshu.jpg
+   Team Member: Himanshu Tyagi
+   Title: Co-founder, Sentient
+   X: @hstyagi
+
+3. abhishek.jpg
+   Team Member: Abhishek Saxena
+   Title: Head of Strategy & Growth, Sentient
+   X: @abhishek095
+
+4. vivek.jpg
+   Team Member: Vivek Kolli
+   Title: Strategist & Integrator, Sentient
+   X: @vivekkolli
+
+5. oleg.jpg
+   Team Member: Oleg Golev
+   Title: Product Lead, Sentient
+   X: @oleg_golev
+
+6. sachi.jpg
+   Team Member: Sachi
+   Title: Miss Sentient
+   X: @0xsachi
+
+7. sewoong.jpg
+   Team Member: Sewoong Oh
+   Title: Machine Learning Guru, Sentient
+   X: @sewoong79
+
+8. yura.jpg
+   Team Member: Yura
+   Title: BD Wizard, Sentient
+   X: @namyura_
+
+
+FOLDER STRUCTURE
+================================================================================
+
+sentient-team/
+└── public/
+    ├── logo.png                    ← Sentient logo here
+    ├── team/
+    │   ├── sandeep.jpg
+    │   ├── himanshu.jpg
+    │   ├── abhishek.jpg
+    │   ├── vivek.jpg
+    │   ├── oleg.jpg
+    │   ├── sachi.jpg
+    │   ├── sewoong.jpg
+    │   └── yura.jpg
+    └── (other files)
+
+
+QUICK SETUP
+================================================================================
+
+1. Copy logo to: sentient-team/public/logo.png
+
+2. Create folder: sentient-team/public/team/
+
+3. Copy team photos to: sentient-team/public/team/
+   - sandeep.jpg
+   - himanshu.jpg
+   - abhishek.jpg
+   - vivek.jpg
+   - oleg.jpg
+   - sachi.jpg
+   - sewoong.jpg
+   - yura.jpg
+
+4. Refresh browser: Ctrl+Shift+R
+
+5. Done! Logo and photos should appear!
+
+
+IMPORTANT NOTES
+================================================================================
+
+✅ Filenames are CASE-SENSITIVE on Mac/Linux
+✅ Use .jpg or .png format (not .jpeg)
+✅ Logo can be .png or .svg
+✅ All images should be 500x500px minimum
+✅ Square aspect ratio (1:1) works best
+✅ Compress images to < 500KB each
+
+❌ Don't use:
+   - Different filenames
+   - Different folder locations
+   - Different image formats
+   - Uppercase letters in filenames
+
+
+TROUBLESHOOTING
+================================================================================
+
+Logo not showing?
+→ Check filename is "logo.png" (lowercase)
+→ Check it's in "public/" folder
+→ Hard refresh: Ctrl+Shift+R
+
+Team photos not showing?
+→ Check filenames match exactly (case-sensitive)
+→ Check files are in "public/team/" folder
+→ Check all 8 files are present
+→ Hard refresh: Ctrl+Shift+R
+
+Fallback avatars showing?
+→ Images failed to load
+→ Check file paths and names
+→ Open browser console (F12) for errors
+
+
+VERIFICATION CHECKLIST
+================================================================================
+
+□ Logo placed at: sentient-team/public/logo.png
+□ Team folder exists: sentient-team/public/team/
+□ sandeep.jpg in public/team/
+□ himanshu.jpg in public/team/
+□ abhishek.jpg in public/team/
+□ vivek.jpg in public/team/
+□ oleg.jpg in public/team/
+□ sachi.jpg in public/team/
+□ sewoong.jpg in public/team/
+□ yura.jpg in public/team/
+□ Browser refreshed (Ctrl+Shift+R)
+□ Logo appears at top
+□ All 8 team photos appear in orbs
+□ Orbs are centered
+□ No console errors
+
+
+DONE!
+================================================================================
+
+Once all images are in place, your Sentient Team Appreciation Board will be:
+✅ Complete
+✅ Beautiful
+✅ Fully functional
+✅ Ready to deploy!
+
+Enjoy! 🚀
+
+================================================================================
+

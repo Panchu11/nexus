@@ -1,0 +1,148 @@
+================================================================================
+🚀 QUICK START - 5 MINUTE SETUP
+================================================================================
+
+WHAT'S ALREADY DONE:
+✅ Logo fixed (now showing)
+✅ Team orbs centered
+✅ Percentage fixed (1 comment = 1%)
+✅ Footer updated (with your name)
+✅ Supabase integration ready
+✅ Dev server running on http://localhost:3001
+
+================================================================================
+STEP 1: CREATE SUPABASE ACCOUNT (2 min)
+================================================================================
+
+1. Go to: https://supabase.com
+2. Click "Start your project"
+3. Sign up with GitHub or email
+4. Create new organization
+
+================================================================================
+STEP 2: CREATE PROJECT (3 min)
+================================================================================
+
+1. Click "New Project"
+2. Name: sentient-team
+3. Create strong password (save it!)
+4. Choose region closest to you
+5. Click "Create new project"
+6. Wait 2-3 minutes...
+
+================================================================================
+STEP 3: CREATE COMMENTS TABLE (2 min)
+================================================================================
+
+1. Go to SQL Editor (left sidebar)
+2. Click "New Query"
+3. Copy and paste this SQL:
+
+---START SQL---
+CREATE TABLE comments (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  member_id TEXT NOT NULL,
+  x_handle TEXT NOT NULL DEFAULT 'Anonymous',
+  message TEXT NOT NULL,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+CREATE INDEX idx_comments_member_id ON comments(member_id);
+
+ALTER TABLE comments ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Allow public read" ON comments
+  FOR SELECT USING (true);
+
+CREATE POLICY "Allow public insert" ON comments
+  FOR INSERT WITH CHECK (true);
+---END SQL---
+
+4. Click "Run"
+5. You should see "Success"
+
+================================================================================
+STEP 4: GET API KEYS (1 min)
+================================================================================
+
+1. Go to Settings (bottom left)
+2. Click "API"
+3. Copy these:
+   - Project URL
+   - anon public key
+
+================================================================================
+STEP 5: ADD ENVIRONMENT VARIABLES (1 min)
+================================================================================
+
+1. Create file: sentient-team/.env.local
+
+2. Add these lines (replace with YOUR values):
+
+NEXT_PUBLIC_SUPABASE_URL=https://your-project-id.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key-here
+
+3. Save file
+
+4. Restart dev server:
+   npm run dev
+
+================================================================================
+TEST IT WORKS
+================================================================================
+
+1. Go to: http://localhost:3001
+2. Click on a team member's orb
+3. Submit an appreciation comment
+4. Check Supabase:
+   - Table Editor → comments
+   - You should see your comment!
+
+================================================================================
+WHAT YOU'LL SEE
+================================================================================
+
+✅ Logo at top of page
+✅ Team orbs perfectly centered
+✅ 1 comment = 1% progress
+✅ Comments stored globally
+✅ Footer shows "by Panchu"
+✅ Real-time updates
+
+================================================================================
+DEPLOY TO VERCEL
+================================================================================
+
+1. Go to Vercel dashboard
+2. Select your project
+3. Settings → Environment Variables
+4. Add:
+   - NEXT_PUBLIC_SUPABASE_URL
+   - NEXT_PUBLIC_SUPABASE_ANON_KEY
+5. Deploy!
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Logo not showing?
+→ Hard refresh: Ctrl+Shift+R
+
+Orbs not centered?
+→ Hard refresh: Ctrl+Shift+R
+
+Comments not saving?
+→ Check .env.local has correct values
+→ Restart dev server: npm run dev
+→ Check browser console (F12)
+
+================================================================================
+TOTAL TIME: ~10 MINUTES
+================================================================================
+
+Your Sentient Team Appreciation Board is ready! 🎉
+
+Questions? Check FINAL_SETUP_GUIDE.md for detailed instructions.
+
+================================================================================
+
