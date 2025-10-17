@@ -131,7 +131,7 @@ export default function Home() {
               NEXUS
             </span>
             <br />
-            <span className="text-white">Team Appreciation Board</span>
+            <span className="text-white">Sentient Team Appreciation Board</span>
           </motion.h1>
 
           {/* Subtitle */}

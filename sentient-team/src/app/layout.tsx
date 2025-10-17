@@ -19,10 +19,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NEXUS - Team Appreciation Board",
+  title: "NEXUS - Sentient Team Appreciation Board",
   description: "A living wall of appreciation for the people shaping the frontier of open intelligence.",
   openGraph: {
-    title: "NEXUS - Team Appreciation Board",
+    title: "NEXUS - Sentient Team Appreciation Board",
     description: "Express your appreciation for the Sentient AGI team",
     type: "website",
   },
