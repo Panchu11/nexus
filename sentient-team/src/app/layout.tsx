@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { Analytics } from "@vercel/analytics/next";
+
 
 // Force dynamic rendering to avoid prerender-time crashes on Windows and ensure
 // error/not-found pages aren't pre-executed during static generation.
@@ -41,6 +43,7 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
