@@ -69,7 +69,7 @@ export default function ChallengesPage() {
       </motion.header>
 
       {/* Content */}
-      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 py-12">
+      <div className="relative z-10 flex flex-col items-center justify-center px-4 py-20 md:py-24 min-h-[calc(100vh-80px)]">
         <div className="w-full max-w-5xl">
           {isLoading ? (
             <div className="text-center py-16">
@@ -88,7 +88,7 @@ export default function ChallengesPage() {
 
               {/* Info Box */}
               <motion.div
-                className="mt-8 p-6 bg-slate-800/50 border border-cyan-500/30 rounded-lg"
+                className="mt-12 p-6 bg-slate-800/50 border border-cyan-500/30 rounded-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}

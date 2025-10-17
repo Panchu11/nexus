@@ -89,10 +89,10 @@ export default function Home() {
       </motion.header>
 
       {/* Content */}
-      <div className="relative z-10 min-h-screen flex flex-col">
+      <div className="relative z-10 flex flex-col">
         {/* Hero Section */}
         <motion.section
-          className="flex-1 flex flex-col items-center justify-center px-4 py-20 text-center"
+          className="flex flex-col items-center justify-center px-4 py-32 md:py-40 text-center min-h-[calc(100vh-80px)]"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -152,7 +152,7 @@ export default function Home() {
         {/* Team Section */}
         <section
           id="team"
-          className="relative py-20 px-4 w-full flex justify-center"
+          className="relative pt-32 pb-20 px-4 w-full flex justify-center"
         >
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-7xl"

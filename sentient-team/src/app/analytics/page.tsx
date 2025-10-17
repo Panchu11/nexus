@@ -85,7 +85,7 @@ export default function AnalyticsPage() {
       </motion.header>
 
       {/* Content */}
-      <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-4 py-12">
+      <div className="relative z-10 flex flex-col items-center justify-center px-4 py-20 md:py-24 min-h-[calc(100vh-80px)]">
         <div className="w-full max-w-5xl">
           {isLoading ? (
             <div className="text-center py-16">
